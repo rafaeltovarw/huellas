@@ -14,19 +14,26 @@
 </head>
 
 <body style="background-color:#F0F0F0">
-  <div class="navbar-fixed">
-    <nav style="background-color: #003399;"">
-      <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="active"><a href="index.html">Inicio</a></li>
-          <li><a href="modulo2.html">Programas</a></li>
-          <li><a href="contactenos.html"><i class="material-icons left">contacts
-          </i>Contáctenos</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  
+  <nav style="background-color: #003399;">
+    <div class="nav-wrapper ">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="index.html">Inicio</a></li>
+        <li><a href="modulo2.html">Programas</a></li>
+        <li><a href="contactenos.html"><i class="material-icons left">contacts
+        </i>Contáctenos</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li class="active"><a href="index.html">Inicio</a></li>
+        <li><a href="modulo2.html">Programas</a></li>
+        <li><a href="contactenos.html"><i class="material-icons left">contacts
+        </i>Contáctenos</a></li>
+      </ul>
+    </div>
+  </nav>
+
 
   <div class="carousel carousel-slider fullscreen">
     <a class="carousel-item" href="#one!"><img src="j1.jpg"></a>
@@ -239,6 +246,7 @@
     $('.modal').modal();
     $('.carousel').carousel();
     $('.slider').slider();
+    $(".button-collapse").sideNav();
 
   });
   function btn_origen(){
