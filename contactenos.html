@@ -750,6 +750,32 @@
 -->
 
 <!--Import jQuery before materialize.js-->
+<footer class="page-footer" style="background-color: #003399">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Un poco más de nosotros</h5>
+        <p class="grey-text text-lighten-4" align="justify">Esta sección tiene como eje central somos una Escuela de líderes para el servicio.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Nuestras Redes Sociales</h5>
+        <div style="margin-left: 75px;">
+          <td>
+            <th><a class="grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/HuellasVenezuela/" ><img src="facebook_22567.png"></a></th>
+            <th><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/HuellasJesuitas"><img src="social-twitter-icon_34350.png"></a></th>
+            <th><a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/huellas_venezuela"><img src="Instagram_icon-icons.com_66804.png"></a></th>
+          </td>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright" style="background-color: #3333FF">
+    <div class="container">
+      Asociación Civil Huellas. Copyright © 2018. Todos los derechos reservados
+      <a class="grey-text text-lighten-4 right" href="#!">Urb. Las Flores de Catia. Caracas, Venezuela</a>
+    </div>
+  </div>
+  </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script>
@@ -757,6 +783,8 @@
     $('.collapsible').collapsible();
     $('ul.tabs').tabs('select_tab', 'rafa');
     $('.modal').modal();
+    $(".button-collapse").sideNav();
+
   });
   function ofnac(){
     $('#ofnac').modal('open');
@@ -796,30 +824,5 @@
   }
 </script>
 </body>
-<footer class="page-footer" style="background-color: #003399">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Un poco más de nosotros</h5>
-        <p class="grey-text text-lighten-4" align="justify">Esta sección tiene como eje central somos una Escuela de líderes para el servicio.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Nuestras Redes Sociales</h5>
-        <div style="margin-left: 75px;">
-          <td>
-            <th><a class="grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/HuellasVenezuela/" ><img src="facebook_22567.png"></a></th>
-            <th><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/HuellasJesuitas"><img src="social-twitter-icon_34350.png"></a></th>
-            <th><a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/huellas_venezuela"><img src="Instagram_icon-icons.com_66804.png"></a></th>
-          </td>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright" style="background-color: #3333FF">
-    <div class="container">
-      Asociación Civil Huellas. Copyright © 2018. Todos los derechos reservados
-      <a class="grey-text text-lighten-4 right" href="#!">Urb. Las Flores de Catia. Caracas, Venezuela</a>
-    </div>
-  </div>
-</footer>
+
 </html>
