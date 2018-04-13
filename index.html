@@ -244,11 +244,18 @@
     $('.collapsible').collapsible();
     $('ul.tabs').tabs('select_tab', 'rafa');
     $('.modal').modal();
-    $('.carousel').carousel();
+    $('.carousel').carousel({
+      indicators: true,
+    });
     $('.slider').slider();
     $(".button-collapse").sideNav();
 
   });
+
+setInterval(function(){
+          $('.carousel').carousel('next');
+        },6000);  
+
   function btn_origen(){
     $('#origen_modal').modal('open');
   };

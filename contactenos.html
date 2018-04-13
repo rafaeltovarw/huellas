@@ -13,11 +13,18 @@
 
 <body style="background-color:#F0F0F0">
 
-  <div class="navbar-fixed">
+  
     <nav style="background-color: #003399;"">
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="modulo2.html">Programas</a></li>
+          <li class="active"><a href="contactenos.html"><i class="material-icons left">contacts
+          </i>Contáctenos</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="modulo2.html">Programas</a></li>
           <li class="active"><a href="contactenos.html"><i class="material-icons left">contacts
@@ -25,7 +32,7 @@
         </ul>
       </div>
     </nav>
-  </div>
+  
 
   <div class="row container">
     <div><h3>Directorio</h3></div>
@@ -72,7 +79,7 @@
     <div class="col s6 m3">
       <div class="card">
         <div class="card-image"><a href="#" onclick="cli();return false;">
-          <img src="cli01.jpg" height="155px">
+          <img src="Logo_CLI1.jpg" height="155px">
           <span class="card-title"></span></a>
         </div>
         <div class="card-content" align="center"><span class="card-title">Comunidad Laical Ignaciana</span></div>
@@ -751,6 +758,7 @@
     $('.collapsible').collapsible();
     $('ul.tabs').tabs('select_tab', 'rafa');
     $('.modal').modal();
+    $(".button-collapse").sideNav();
   });
   function ofnac(){
     $('#ofnac').modal('open');
