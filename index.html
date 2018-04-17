@@ -17,7 +17,7 @@
   
   <nav style="background-color: #003399;">
     <div class="nav-wrapper ">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo"><img  class="responsive-img" src="logo.png" alt="Unsplashed background img 1"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li class="active"><a href="index.html">Inicio</a></li>
@@ -35,17 +35,17 @@
   </nav>
 
 
-  <div class="carousel carousel-slider fullscreen">
-    <a class="carousel-item" href="#one!"><img src="j1.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="j2.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="j3.jpeg"></a>
+  <div class="carousel carousel-slider center">
+    <a class="carousel-item" ><img  class="responsive-img" src="h1.jpg"></a>
+    <a class="carousel-item" ><img  class="responsive-img" src="h2.jpg"></a>
+    <a class="carousel-item" ><img  class="responsive-img" src="h3.jpg"></a>
   </div>
 
-  <div class="row container">
+  <div class="row">
     <div class="col s6 m3">
       <div class="card">
         <div class="card-image" onclick="btn_origen()">
-          <img src="o_1.png">
+          <img class="responsive-img" src="o_1.png">
         </div>
         <div class="card-content">
           <span class="lighten-text card-title">Origen</span>
@@ -56,7 +56,7 @@
     <div class="col s6 m3">
       <div class="card blue">
         <div class="card-image" onclick="fundamentos()">
-          <img src="fundamentos.png">
+          <img  class="responsive-img" src="fundamentos.png">
         </div>
         <div class="card-content">
           <span class="white-text card-title">Fundamentos</span>
@@ -67,7 +67,7 @@
     <div class="col s6 m3">
       <div class="card red">
         <div class="card-image" onclick="somos()">
-          <img src="somos_1.png">
+          <img  class="responsive-img" src="somos_1.png">
         </div>
         <div class="card-content">
           <span class="white-text card-title">Quienes Somos</span>
@@ -78,7 +78,7 @@
     <div class="col s6 m3">
       <div class="card green">
         <div class="card-image" onclick="donde_estamos()">
-          <img src="vene.jpg">
+          <img  class="responsive-img" src="vene.jpg">
         </div>
         <div class="card-content">
           <span class="white-text card-title">Donde Estamos</span>
@@ -211,23 +211,22 @@
 
 <footer class="page-footer" style="background-color: #003399">
   <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Un poco más de nosotros</h5>
-        <p class="grey-text text-lighten-4">Esta sección tiene como eje central somos una Escuela de líderes para el servicio.
-        .</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Nuestras Redes Sociales</h5>
-        <div style="margin-left: 75px;">
-          <td>
-            <th><a class="grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/HuellasVenezuela/" ><img src="facebook_22567.png"></a></th>
-            <th><a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/HuellasJesuitas"><img src="social-twitter-icon_34350.png"></a></th>
-            <th><a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/huellas_venezuela"><img src="Instagram_icon-icons.com_66804.png"></a></th>
-          </td>
-        </div>
-      </div>
-    </div>
+      <div class="row">
+
+          <div class="col s4">
+            <!-- Promo Content 1 goes here -->
+            <a class="grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/HuellasVenezuela/" ><img  class="circle responsive-img" src="face.jpg"></a>
+          </div>
+          <div class="col s4">
+            <!-- Promo Content 2 goes here -->
+            <a class="grey-text text-lighten-3" target="_blank" href="https://twitter.com/HuellasJesuitas"><img  class="circle responsive-img" src="twiter.jpg"></a>
+          </div>
+          <div class="col s4">
+            <!-- Promo Content 3 goes here -->
+            <a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/huellas_venezuela"><img  class="circle responsive-img" src="instagran.png"></a>
+          </div>
+    
+        </div>    
   </div>
   <div class="footer-copyright" style="background-color: #3333FF">
     <div class="container">
@@ -244,8 +243,9 @@
     $('.collapsible').collapsible();
     $('ul.tabs').tabs('select_tab', 'rafa');
     $('.modal').modal();
-    $('.carousel').carousel({
-      indicators: true,
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
     });
     $('.slider').slider();
     $(".button-collapse").sideNav();
